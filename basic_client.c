@@ -23,4 +23,6 @@ int main() {
     printf("response: %s\n", res);
 
   }
+
+  return 0;
 }

@@ -28,4 +28,6 @@ int main() {
       write(to_client, res, BUFFER_SIZE);
     }
   }
+
+  return 0;
 }
