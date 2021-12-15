@@ -15,6 +15,11 @@ int main() {
     fgets(req, BUFFER_SIZE, stdin);
     sscanf(req, "%s", req);
 
+    if (strcmp(req, "exit") == 0) {
+      printf("Exiting...\n");
+      break;
+    }
+
     write(to_server, req, BUFFER_SIZE);
 
     char *res = malloc(BUFFER_SIZE);
