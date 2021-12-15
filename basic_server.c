@@ -14,7 +14,7 @@ int main() {
 
   from_client = server_handshake( &to_client );
 
-  char res = malloc(BUFFER_SIZE);
+  char *res = malloc(BUFFER_SIZE);
 
   while (1) {
     int fd = read(from_client, res, BUFFER_SIZE);
