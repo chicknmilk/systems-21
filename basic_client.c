@@ -8,21 +8,19 @@ int main() {
 
   from_server = client_handshake( &to_server );
 
-  // while (1) {
-  //   char *req = malloc(BUFFER_SIZE);
+  while (1) {
+    char *req = malloc(BUFFER_SIZE);
 
-  //   printf("Enter a string: ");
-  //   fgets(req, BUFFER_SIZE, stdin);
-  //   sscanf(req, "%s", req);
+    printf("Enter a string: ");
+    fgets(req, BUFFER_SIZE, stdin);
+    sscanf(req, "%s", req);
 
-  //   write(to_server, req, BUFFER_SIZE);
+    write(to_server, req, BUFFER_SIZE);
 
-  //   char *res = malloc(BUFFER_SIZE);
-  //   read(from_server, res, BUFFER_SIZE);
+    char *res = malloc(BUFFER_SIZE);
+    read(from_server, res, BUFFER_SIZE);
 
-  //   printf("response: %s\n", res);
+    printf("response: %s\n", res);
 
-  // }
-
-  return 0;
+  }
 }
