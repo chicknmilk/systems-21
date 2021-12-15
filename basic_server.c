@@ -30,6 +30,8 @@ int main() {
       }
     }
 
+    printf("client disconnected... waiting for new connection\n");
+
   }
 
 
